@@ -14,16 +14,16 @@ const MovieController = require("../controllers/index");
 router.get("/", MovieController.getAllMovies);
 
 //  ROUTE TO GET SINGLE MOVIE FROM ID (.GET)
-//router.get("/:id", MovieController.getSingleMovie);
+router.get("/:id", MovieController.getSingleMovie);
 
 //  ROUTE TO CREATE A MOVIE (.POST)
-//router.post("/", MovieController.createMovie);
+router.post("/", MovieController.createMovie);
 
 //  ROUTE TO UPDATE MOVIE (.PUT)
-//router.put("/:id", MovieController.updateMovie);
+router.put("/:id", MovieController.updateMovie);
 
 //  ROUTE TO DELETE MOVIE (.DELETE)
-// router.delete("/:id", MovieController.deleteMovie);
+router.delete("/:id", MovieController.deleteMovie);
 
 //  EXPORT ROUTER
 module.exports = router;

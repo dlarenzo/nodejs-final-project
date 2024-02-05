@@ -1,5 +1,35 @@
 ###GET ROOT PATH
 GET http://localhost:3000/ HTTP/1.1
 
-### GET TOOELE TECH ROUTE 
+### GET ALL MOVIES ROUTE 
 GET http://localhost:3000/movies HTTP/1.1
+
+### GET SINGLE MOVIE ROUTE 
+GET http://localhost:3000/movies/65bd3d19cd82f1dd64f356c8 HTTP/1.1
+
+### POST CREATE ONE MOVIE ROUTE 
+POST http://localhost:3000/movies HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "The Godfather",
+    "year": 1972,
+    "rating": "R",
+    "director": "Francis Ford Coppola",
+    "plot": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son."
+}
+
+### PUT/PATCH  UPDATE ONE MOVIE ROUTE
+PUT http://localhost:3000/movies/65c13c2437ce5ec1022a4b3f HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "The Godfather",
+    "year": 1972,
+    "rating": "R",
+    "director": "Francis F. Coppola",
+    "plot": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son."
+}
+
+### DELETE ONE MOVIE ROUTE
+DELETE http://localhost:3000/movies/65c13c2437ce5ec1022a4b3f HTTP/1.1
