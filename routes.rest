@@ -20,7 +20,7 @@ Content-Type: application/json
 }
 
 ### PUT/PATCH  UPDATE ONE MOVIE ROUTE
-PUT http://localhost:3000/movies/65c13c2437ce5ec1022a4b3f HTTP/1.1
+PUT http://localhost:3000/movies/65c13f31dad593df82824a2a HTTP/1.1
 Content-Type: application/json
 
 {
@@ -32,4 +32,4 @@ Content-Type: application/json
 }
 
 ### DELETE ONE MOVIE ROUTE
-DELETE http://localhost:3000/movies/65c13c2437ce5ec1022a4b3f HTTP/1.1
+DELETE http://localhost:3000/movies/65c13f31dad593df82824a2a HTTP/1.1
